@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+</head>
+<body>
+
+<h1>House Price Prediction</h1>
+
+<form action="/predict" method="POST">
+
+    <input type="text" name="city" placeholder="City"><br><br>
+
+    <input type="text" name="locality" placeholder="Locality Tier"><br><br>
+
+    <input type="number" name="bhk" placeholder="BHK"><br><br>
+
+    <input type="number" name="bathrooms" placeholder="Bathrooms"><br><br>
+
+    <input type="number" step="0.1" name="super_area" placeholder="Super Area"><br><br>
+
+    <input type="number" step="0.1" name="carpet_area" placeholder="Carpet Area"><br><br>
+
+    <input type="number" name="floor_no" placeholder="Floor Number"><br><br>
+
+    <input type="number" name="total_floors" placeholder="Total Floors"><br><br>
+
+    <input type="number" name="property_age" placeholder="Property Age"><br><br>
+
+    <input type="number" name="parking" placeholder="Parking"><br><br>
+
+    <input type="text" name="furnishing" placeholder="Furnishing"><br><br>
+
+    <input type="number" name="lift" placeholder="Lift"><br><br>
+
+    <input type="number" name="gated" placeholder="Gated Society"><br><br>
+
+    <input type="number" step="0.1" name="metro" placeholder="Distance to Metro"><br><br>
+
+    <input type="number" step="0.1" name="city_center" placeholder="Distance to City Center"><br><br>
+
+    <input type="number" step="0.1" name="school" placeholder="Nearby School"><br><br>
+
+    <input type="number" step="0.1" name="hospital" placeholder="Nearby Hospital"><br><br>
+
+    <input type="number" step="0.1" name="crime" placeholder="Crime Rate"><br><br>
+
+    <input type="number" step="0.1" name="price_sqft" placeholder="Price per sqft"><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction }}</h2>
+
+</body>
+</html>
